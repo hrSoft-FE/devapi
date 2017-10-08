@@ -309,4 +309,20 @@ router.get('/verify', function (req, res, next) {
     }
   )
 })
+router.get('/verify-code', function (req, res, next) {
+  res.json({
+    'code': 0,
+    'data': {
+      'verifyCode': '10086'
+    }
+  })
+})
+router.post('/update-info', function (req, res, next) {
+  res.json({
+    'code': 0,
+    'data': {
+      'verifyCode': '10086'
+    }
+  })
+})
 module.exports = router
